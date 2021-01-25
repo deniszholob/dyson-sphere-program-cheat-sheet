@@ -39,5 +39,9 @@ export const data_links = {
       "url": "https://shadowtheage.github.io/factorio-lab/list",
       "text": "Calculator via FactorioLab"
     },
+    {
+      "url": "https://deniszholob.github.io/factorio-machine-ratio-calc/",
+      "text": "Generic Machine Ratio Planner"
+    },
   ]
 }
