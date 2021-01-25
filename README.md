@@ -15,4 +15,4 @@ If you found the cheat sheet or the source code useful, consider supporting me o
 [![button](https://c5.patreon.com/external/logo/downloads_wordmark_white_on_coral.png)](https://www.patreon.com/deniszholob)
 
 # Screenshots
-![Dyson Sphere Program Cheat Sheet Desktop Website](images/screenshot_2020-06-30.png)
+![Dyson Sphere Program Cheat Sheet Desktop Website](images/chrome_ZxaQjeO8kB.png)
