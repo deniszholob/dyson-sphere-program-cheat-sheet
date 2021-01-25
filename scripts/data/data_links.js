@@ -43,5 +43,13 @@ export const data_links = {
             "url": "https://deniszholob.github.io/factorio-machine-ratio-calc/",
             "text": "Generic Machine Ratio Planner"
         },
+        {
+            "url": "https://gameplay.tips/guides/9575-dyson-sphere-program.html",
+            "text": "Starter Guide"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=Kkk2Xg08Wms&list=PLV3rF--heRVtfN2S6uiVOdzBFHkheQoI2&index=3",
+            "text": "Nilaus Ratio Guide"
+        },
     ]
 };
