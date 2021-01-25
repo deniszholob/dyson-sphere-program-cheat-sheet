@@ -1,0 +1,14 @@
+{
+  "name": "dyson-sphere-program-cheat-sheet",
+  "version": "1.0.0",
+  "description": "Dyson Sphere Program Cheat Sheet",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc -w"
+  },
+  "author": "Denis Zholob",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
