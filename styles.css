@@ -20,8 +20,6 @@ a {
   color: var(--c-primary);
 }
 
-/* btn-outline-primary */
-
 a:hover {
   color: var(--c-primary-dark);
   text-decoration: none;
@@ -225,29 +223,33 @@ img.icon {
 }
 
 .icon-64 {
+  display: inline-block;
   height: 64px;
   width: 64px;
 }
 
 .icon-48 {
+  display: inline-block;
   height: 48px;
   width: 48px;
 }
 
 .icon-32 {
+  display: inline-block;
   height: 32px;
   width: 32px;
 }
 
 .icon-24 {
+  display: inline-block;
   height: 24px;
   width: 24px;
 }
 
 .icon-composite {
+  display: inline-block;
   height: 64px;
   width: 64px;
-  display: inline-block;
   position: relative;
   padding: 0px;
   margin: 0 6px;
@@ -269,11 +271,15 @@ img.icon {
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 1)) brightness(150%);
 }
 
+.icon-composite .icon-fg img {
+  width: 100%;
+}
+
 .icon-composite .icon-text {
   position: absolute;
   bottom: 0;
   right: 3px;
-  color: #fff;
+  color: var(--c-text);
   font-weight: 700;
   font-size: 1em;
   text-shadow: 0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
@@ -335,7 +341,7 @@ img.icon {
   visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  color: var(--c-text);
   font-size: 0.9rem;
   text-align: center;
   border-radius: 6px;
