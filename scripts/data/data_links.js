@@ -48,7 +48,7 @@ export const data_links = {
             "text": "Starter Guide"
         },
         {
-            "url": "https://www.youtube.com/watch?v=Kkk2Xg08Wms&list=PLV3rF--heRVtfN2S6uiVOdzBFHkheQoI2&index=3",
+            "url": "https://www.youtube.com/watch?v=Kkk2Xg08Wms&list=PLV3rF--heRVvMZ8hHe5BHWRGrt1lXfaqt",
             "text": "Nilaus Ratio Guide"
         },
     ]
