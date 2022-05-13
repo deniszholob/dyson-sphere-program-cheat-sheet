@@ -4,8 +4,8 @@ export class UtilService {
    * <a href="url" rel="noopener" target="_blank"></a>
    * @param {String} url
    */
-  static getExternalLinkEl(url: string) {
-    const elLink = document.createElement("a");
+  static getExternalLinkEl(url: string): HTMLAnchorElement {
+    const elLink: HTMLAnchorElement = document.createElement("a");
     elLink.href = url;
     elLink.rel = "noopener";
     elLink.target = "_blank";
@@ -16,8 +16,8 @@ export class UtilService {
    * <i class="fas fa-id"></i>
    * @param {String} id of the Font Awesome Icon
    */
-  static getFaIcon(id: String) {
-    const elIcon = document.createElement("i");
+  static getFaIcon(id: String): HTMLElement {
+    const elIcon: HTMLElement = document.createElement("i");
     elIcon.classList.value = "fas fa-xs fa-" + id;
     return elIcon;
   }
@@ -30,7 +30,7 @@ export class UtilService {
    * @return url string
    * @param {String} name
    */
-  static getGameIconPath(name: string) {
+  static getGameIconPath(name: string): string {
     return "https://calc.dsp-wiki.com/images/" + name + ".png";
   }
 
@@ -38,14 +38,14 @@ export class UtilService {
    * <img src="url" alt="name" title="name">
    * @param {String} name
    */
-  static getGameIcon(name: string) {
+  static getGameIcon(name: string): HTMLImageElement {
     if (name) {
       name = name.replace(/_/g, " ");
       name = name.replace(/\w\S*/g, (txt) => {
         return txt.charAt(0).toUpperCase() + txt.substr(1);
       });
     }
-    const elImage = document.createElement("img");
+    const elImage: HTMLImageElement = document.createElement("img");
     elImage.src = this.getGameIconPath(name);
     elImage.alt = name;
     elImage.title = name;
@@ -55,7 +55,7 @@ export class UtilService {
   static getHrName(name: string): string {
     if (name) {
       name = name.replace(/_/g, " ");
-      name = name.replace(/\w\S*/g, (txt) => {
+      name = name.replace(/\w\S*/g, (txt: string): string => {
         return txt.charAt(0).toUpperCase() + txt.substr(1);
       });
     }
@@ -67,14 +67,14 @@ export class UtilService {
    * @param {String} product
    * @param {String} machine
    */
-  static getGameIconProductionItem(product: string, machine: string, count: number) {
-    const elDivIcon = document.createElement("div");
+  static getGameIconProductionItem(product: string, machine: string, count: number): HTMLDivElement {
+    const elDivIcon: HTMLDivElement = document.createElement("div");
     elDivIcon.classList.value = "icon-composite";
-    const elImgBg = this.getGameIcon(machine);
+    const elImgBg: HTMLImageElement = this.getGameIcon(machine);
     elImgBg.classList.value = "icon icon-bg";
-    const elImgFg = this.getGameIcon(product);
+    const elImgFg: HTMLImageElement = this.getGameIcon(product);
     elImgFg.classList.value = "icon icon-fg";
-    const elSpan = document.createElement("span");
+    const elSpan: HTMLSpanElement = document.createElement("span");
     elSpan.appendChild(document.createTextNode(count.toString()));
     elSpan.classList.value = "icon-text";
 

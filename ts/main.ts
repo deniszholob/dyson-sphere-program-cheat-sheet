@@ -12,7 +12,7 @@ function onInit() {
   renderLinkData((data_links as DataLinks).communityLinks);
 }
 
-function renderLinkData(data: DataLink[] ){
+function renderLinkData(data: DataLink[]): void {
   const elUlLinks = document.createElement("ul");
   data.forEach(elLink => {
     const elaLink = UtilService.getExternalLinkEl(elLink.url);
