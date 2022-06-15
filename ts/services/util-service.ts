@@ -1,3 +1,5 @@
+const RECIPE_URL = "https://gamma-delta.github.io/center-brain-archive/dsp.json";
+
 /** Common functions for links */
 export class UtilService {
   /**
@@ -83,5 +85,20 @@ export class UtilService {
     elDivIcon.appendChild(elSpan);
 
     return elDivIcon;
+  }
+
+  static getJsonFromUrl(url: string, callback: (a: string | null, d: any) => void): void {
+    const xhr: XMLHttpRequest = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.responseType = "json";
+    xhr.onload = function () {
+      const status: number = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(`${status}`, xhr.response);
+      }
+    };
+    xhr.send();
   }
 }
