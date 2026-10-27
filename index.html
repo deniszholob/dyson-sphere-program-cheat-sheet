@@ -84,10 +84,26 @@
 </head>
 
 <body class="d-flex flex-column h-100">
+  <div class="side-nav" id="section-sidebar">
+    <nav class="nav-contents" aria-label="Page sections">
+      <a href="#top"><i class="fas fa-arrow-up" aria-hidden="true"></i><span>Top</span></a>
+      <a href="#selected-build-ratios"><i class="fas fa-industry" aria-hidden="true"></i><span>Selected Build Ratios</span></a>
+      <a href="#science-matrices"><i class="fas fa-cubes" aria-hidden="true"></i><span>Science Matrices</span></a>
+      <a href="#info-tables"><i class="fas fa-table" aria-hidden="true"></i><span>Info Tables</span></a>
+      <a href="#logistics"><i class="fas fa-dolly" aria-hidden="true"></i><span>Logistics</span></a>
+      <a href="#power"><i class="fas fa-bolt" aria-hidden="true"></i><span>Power</span></a>
+      <a href="#links"><i class="fas fa-link" aria-hidden="true"></i><span>Links</span></a>
+    </nav>
+    <button class="nav-opener" id="section-sidebar-toggle" type="button" aria-controls="section-sidebar"
+      aria-expanded="false" aria-label="Open section navigation">
+      <i class="fas fa-angle-left" aria-hidden="true"></i>
+      <i class="fas fa-angle-right" aria-hidden="true"></i>
+    </button>
+  </div>
   <main role="main" class="flex-shrink-0">
     <section>
       <div class="container">
-        <h1 class="text-center">Dyson Sphere Program Cheat Sheet</h1>
+        <h1 class="text-center" id="top">Dyson Sphere Program Cheat Sheet</h1>
         <br>
         <p class="txt-muted">
           This is a work in progress, and a really rough draft.
@@ -121,9 +137,9 @@
     <section>
       <div class="container-fluid">
 
-        <div class="card">
+        <div class="card selected-ratios">
           <div class="card-header">
-            <h4>Selected Build Ratios <small>(WIP...)</small></h4>
+            <h4 id="selected-build-ratios">Selected Build Ratios</h4>
           </div>
           <div id="ChainedRatios" class="card-body">
             <div class="list-group">
@@ -200,37 +216,37 @@
 
               <a href="/images/ratios/matrix-red.png" rel="noopener" target="_blank" class="list-group-item">
                 <div class="icon-composite">
-                  <img src="https://calc.dsp-wiki.com/images/oil-refinery.png" alt="Refinery" title="Refinery"
+                  <img src="https://media.dsp-wiki.com/7/74/Icon_Oil_Refinery.png" alt="Oil Refinery" title="Oil Refinery"
                     class="icon icon-bg">
-                  <img src="https://calc.dsp-wiki.com/images/refined-oil.png" alt="Refined Oil" title="Refined Oil"
+                  <img src="https://media.dsp-wiki.com/f/f9/Icon_Refined_Oil.png" alt="Refined Oil" title="Refined Oil"
                     class="icon icon-fg">
                   <span class="icon-text">8</span>
                 </div>
                 <div class="icon-composite">
-                  <img src="https://calc.dsp-wiki.com/images/oil-refinery.png" alt="Refinery" title="Refinery"
+                  <img src="https://media.dsp-wiki.com/7/74/Icon_Oil_Refinery.png" alt="Oil Refinery" title="Oil Refinery"
                     class="icon icon-bg">
-                  <img src="https://calc.dsp-wiki.com/images/hydrogen.png" alt="Hydrogen" title="Hydrogen"
+                  <img src="https://media.dsp-wiki.com/4/42/Icon_Hydrogen.png" alt="Hydrogen" title="Hydrogen"
                     class="icon icon-fg">
                   <span class="icon-text">4</span>
                 </div>
                 <div class="icon-composite">
-                  <img src="https://calc.dsp-wiki.com/images/smelter.png" alt="Smelter" title="Smelter"
+                  <img src="https://media.dsp-wiki.com/6/60/Icon_Arc_Smelter.png" alt="Arc Smelter" title="Arc Smelter"
                     class="icon icon-bg">
-                  <img src="https://calc.dsp-wiki.com/images/graphite.png" alt="Graphite" title="Graphite"
+                  <img src="https://media.dsp-wiki.com/1/11/Icon_Energetic_Graphite.png" alt="Energetic Graphite" title="Energetic Graphite"
                     class="icon icon-fg">
                   <span class="icon-text">2</span>
                 </div>
                 <div class="icon-composite">
-                  <img src="https://dsp-wiki.com/images/b/b7/Icon_Matrix_Lab.png" alt="Matrix Lab" title="Matrix Lab"
+                  <img src="https://media.dsp-wiki.com/b/b7/Icon_Matrix_Lab.png" alt="Matrix Lab" title="Matrix Lab"
                     class="icon icon-bg">
-                  <img src="https://calc.dsp-wiki.com/images/e-matrix.png" alt="Energy Matrix" title="Energy Matrix"
+                  <img src="https://media.dsp-wiki.com/8/83/Icon_Energy_Matrix.png" alt="Energy Matrix" title="Energy Matrix"
                     class="icon icon-fg">
                   <span class="icon-text">9</span>
                 </div>
                 <div class="icon-composite">
-                  <img src="https://calc.dsp-wiki.com/images/storage-tank.png" alt="Storage Tank" title="Storage Tank"
+                  <img src="https://media.dsp-wiki.com/0/00/Icon_Storage_Tank.png" alt="Storage Tank" title="Storage Tank"
                     class="icon icon-bg">
-                  <img src="https://calc.dsp-wiki.com/images/refined-oil.png" alt="Refined Oil" title="Refined Oil"
+                  <img src="https://media.dsp-wiki.com/f/f9/Icon_Refined_Oil.png" alt="Refined Oil" title="Refined Oil"
                     class="icon icon-fg">
                   <span class="icon-text">*</span>
                 </div>
@@ -248,23 +264,165 @@
 
         <div class="card">
           <div class="card-header">
-            <h4>Info Tables</h4>
+            <h4 id="science-matrices">Science Matrices</h4>
+          </div>
+          <div class="card-body">
+            <div class="matrix-grid">
+              <a class="matrix-item" href="https://dsp-wiki.com/Electromagnetic_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/0/0f/Icon_Electromagnetic_Matrix.png" alt="">
+                  <span>Electromagnetic Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/e/e5/Icon_Magnetic_Coil.png" alt=""><span>Magnetic Coil</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/2/2f/Icon_Circuit_Board.png" alt=""><span>Circuit Board</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>1 output / 3 s</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Energy_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/8/83/Icon_Energy_Matrix.png" alt="">
+                  <span>Energy Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">2</span><img src="https://media.dsp-wiki.com/1/11/Icon_Energetic_Graphite.png" alt=""><span>Energetic Graphite</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">2</span><img src="https://media.dsp-wiki.com/4/42/Icon_Hydrogen.png" alt=""><span>Hydrogen</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>1 output / 6 s</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Structure_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/4/44/Icon_Structure_Matrix.png" alt="">
+                  <span>Structure Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/a/af/Icon_Diamond.png" alt=""><span>Diamond</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/5/5b/Icon_Titanium_Crystal.png" alt=""><span>Titanium Crystal</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>1 output / 8 s</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Information_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/c/ca/Icon_Information_Matrix.png" alt="">
+                  <span>Information Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">2</span><img src="https://media.dsp-wiki.com/f/f1/Icon_Processor.png" alt=""><span>Processor</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/b/b6/Icon_Particle_Broadband.png" alt=""><span>Particle Broadband</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>1 output / 10 s</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Gravity_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/4/47/Icon_Gravity_Matrix.png" alt="">
+                  <span>Gravity Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/d/df/Icon_Graviton_Lens.png" alt=""><span>Graviton Lens</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/2/2f/Icon_Quantum_Chip.png" alt=""><span>Quantum Chip</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>2 outputs / 24 s</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Universe_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/f/fc/Icon_Universe_Matrix.png" alt="">
+                  <span>Universe Matrix</span>
+                </div>
+                <div class="matrix-ingredients" aria-label="Recipe ingredients">
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/0/0f/Icon_Electromagnetic_Matrix.png" alt=""><span>Electromagnetic Matrix</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/8/83/Icon_Energy_Matrix.png" alt=""><span>Energy Matrix</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/4/44/Icon_Structure_Matrix.png" alt=""><span>Structure Matrix</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/c/ca/Icon_Information_Matrix.png" alt=""><span>Information Matrix</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/4/47/Icon_Gravity_Matrix.png" alt=""><span>Gravity Matrix</span></div>
+                  <div class="matrix-ingredient"><span class="matrix-amount">1</span><img src="https://media.dsp-wiki.com/7/78/Icon_Antimatter.png" alt=""><span>Antimatter</span></div>
+                </div>
+                <div class="matrix-recipe-meta"><span>Matrix Lab or Self-evolution Lab</span><strong>1 output / 15 s · Not replicable</strong></div>
+              </a>
+              <a class="matrix-item" href="https://dsp-wiki.com/Dark_Fog_Matrix" target="_blank" rel="noopener">
+                <div class="matrix-recipe-title">
+                  <img class="matrix-icon" src="https://media.dsp-wiki.com/f/f1/Icon_Dark_Fog_Matrix.png" alt="">
+                  <span>Dark Fog Matrix</span>
+                </div>
+                <div class="matrix-acquisition">
+                  <span>Dropped by level 12+ Dark Fog units</span>
+                  <strong>3% chance · 7–10 per drop</strong>
+                </div>
+                <div class="matrix-recipe-meta"><span>Collected from Planetary Base Units</span><strong>Not crafted</strong></div>
+              </a>
+            </div>
+            <div class="matrix-balance">
+              <div class="matrix-balance-heading">
+                <h5>Matrix Lab Ratios</h5>
+                <span>Same-speed Matrix Labs</span>
+              </div>
+              <div class="matrix-ratio-list" aria-label="Matrix Lab counts">
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/0/0f/Icon_Electromagnetic_Matrix.png" alt="">
+                  <span>Electromagnetic</span>
+                  <strong>3</strong>
+                </div>
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/8/83/Icon_Energy_Matrix.png" alt="">
+                  <span>Energy</span>
+                  <strong>6</strong>
+                </div>
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/4/44/Icon_Structure_Matrix.png" alt="">
+                  <span>Structure</span>
+                  <strong>8</strong>
+                </div>
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/c/ca/Icon_Information_Matrix.png" alt="">
+                  <span>Information</span>
+                  <strong>10</strong>
+                </div>
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/4/47/Icon_Gravity_Matrix.png" alt="">
+                  <span>Gravity</span>
+                  <strong>12</strong>
+                </div>
+                <div class="matrix-ratio-item">
+                  <img src="https://media.dsp-wiki.com/f/fc/Icon_Universe_Matrix.png" alt="">
+                  <span>Universe</span>
+                  <strong>15</strong>
+                </div>
+              </div>
+              <p>Dark Fog Matrix is dropped, so it is not included in this production ratio.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 id="info-tables">Info Tables</h4>
           </div>
           <div class="card-body">
 
 
-            <h4>Logistics</h4>
+            <h4 id="logistics">Logistics</h4>
             <table class="table table-sm table-hover fixed-width">
               <caption>Mining</caption>
               <thead>
                 <tr>
+                  <th colspan="2">Mining Machine</th>
+                  <th colspan="2">Advanced Mining Machine</th>
+                </tr>
+                <tr>
                   <th>
-                    <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/mining-drill.png"
-                      title="Mining Drill">
+                    <img class="icon icon-48" src="https://media.dsp-wiki.com/c/cf/Icon_Mining_Machine.png"
+                      title="Mining Machine">
                   </th>
                   <th>
-                    <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/mining-drill.png"
-                      title="Mining Drill">
+                    <img class="icon icon-48" src="https://media.dsp-wiki.com/c/cf/Icon_Mining_Machine.png"
+                      title="Mining Machine">
+                  </th>
+                  <th>
+                    <img class="icon icon-48" src="https://media.dsp-wiki.com/5/55/Icon_Advanced_Mining_Machine.png"
+                      title="Advanced Mining Machine">
+                  </th>
+                  <th>
+                    <img class="icon icon-48" src="https://media.dsp-wiki.com/5/55/Icon_Advanced_Mining_Machine.png"
+                      title="Advanced Mining Machine">
                   </th>
                 </tr>
               </thead>
@@ -272,28 +430,33 @@
                 <tr>
                   <td>0.5 i/s per 1 vein</td>
                   <td>3 i/s per 6 vein</td>
+                  <td>1 i/s per 1 vein</td>
+                  <td>6 i/s per 6 vein</td>
                 </tr>
                 <tr>
                   <td>30 i/m per 1 vein</td>
                   <td>180 i/m per 6 vein</td>
+                  <td>60 i/m per 1 vein</td>
+                  <td>360 i/m per 6 vein</td>
                 </tr>
               </tbody>
             </table>
+            <small class="logistics-note">Advanced Mining Machine rates shown at 100% mining speed; its speed can be adjusted up to 300%.</small>
 
 
             <table class="table table-sm table-hover fixed-width">
               <caption>Belts</caption>
               <tr>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/belt-1.png" title="Conveyor Belt">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/7/78/Icon_Conveyor_Belt_Mk.I.png" title="Conveyor Belt Mk.I">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/belt-2.png"
-                    title="Conveyor Belt Mk.2">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/3/38/Icon_Conveyor_Belt_Mk.II.png"
+                    title="Conveyor Belt Mk.II">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/belt-3.png"
-                    title="Conveyor Belt Mk.3">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/1/18/Icon_Conveyor_Belt_Mk.III.png"
+                    title="Conveyor Belt Mk.III">
                 </th>
               </tr>
               <tr>
@@ -308,16 +471,16 @@
               </tr>
               <tr>
                 <th>
-                  2<img class="icon icon-48" src="https://calc.dsp-wiki.com/images/mining-drill.png"
-                    title="Mining Drill">(6 Vein)
+                  2<img class="icon icon-48" src="https://media.dsp-wiki.com/c/cf/Icon_Mining_Machine.png"
+                    title="Mining Machine">(6 Vein)
                 </th>
                 <th>
-                  4<img class="icon icon-48" src="https://calc.dsp-wiki.com/images/mining-drill.png"
-                    title="Mining Drill">(6 Vein)
+                  4<img class="icon icon-48" src="https://media.dsp-wiki.com/c/cf/Icon_Mining_Machine.png"
+                    title="Mining Machine">(6 Vein)
                 </th>
                 <th>
-                  10<img class="icon icon-48" src="https://calc.dsp-wiki.com/images/mining-drill.png"
-                    title="Mining Drill">(6 Vein)
+                  10<img class="icon icon-48" src="https://media.dsp-wiki.com/c/cf/Icon_Mining_Machine.png"
+                    title="Mining Machine">(6 Vein)
                 </th>
               </tr>
             </table>
@@ -327,13 +490,13 @@
               <caption>Sorters</caption>
               <tr>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/inserter-1.png" title="Sorter">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/4/4f/Icon_Sorter_Mk.I.png" title="Sorter">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/inserter-2.png" title="Sorter Mk.2">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/2/25/Icon_Sorter_Mk.II.png" title="Sorter Mk.II">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/inserter-3.png" title="Sorter Mk.3">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/b/b5/Icon_Sorter_Mk.III.png" title="Sorter Mk.III">
                 </th>
               </tr>
               <tr>
@@ -359,30 +522,30 @@
             </table>
 
 
-            <h4>Power</h4>
+            <h4 id="power">Power</h4>
             <table class="table table-sm table-hover fixed-width">
               <caption>Generators</caption>
               <tr>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/wind-turbine.png"
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/1/14/Icon_Wind_Turbine.png"
                     title="Wind Turbine">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/solar-panel.png" title="Solar Panel">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/7/77/Icon_Solar_Panel.png" title="Solar Panel">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/fuel-plant.png" title="Fuel Plant">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/c/c5/Icon_Thermal_Power_Plant.png" title="Thermal Power Plant">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/ray-receiver.png"
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/7/7b/Icon_Ray_Receiver.png"
                     title="Ray Receiver">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/fusion-power-station.png"
-                    title="Power Station">
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/0/03/Icon_Mini_Fusion_Power_Plant.png"
+                    title="Mini Fusion Power Plant">
                 </th>
                 <th>
-                  <img class="icon icon-48" src="https://calc.dsp-wiki.com/images/fusion-reactor.png"
+                  <img class="icon icon-48" src="https://media.dsp-wiki.com/b/b6/Icon_Artificial_Star.png"
                     title="Artificial Star">
                 </th>
               </tr>
@@ -390,11 +553,12 @@
                 <td>0.30 MW</td>
                 <td>0.36 MW</td>
                 <td>2.16 MW</td>
-                <td>5 MW</td>
-                <td>9 MW</td>
-                <td>75 MW</td>
+                <td>6–15 MW*</td>
+                <td>15 MW</td>
+                <td>72 MW</td>
               </tr>
             </table>
+            <small class="power-note">* Ray Receiver output in Power mode ramps from 6 MW to 15 MW with continuous receiving. Graviton Lenses can increase it further.</small>
 
 
 
@@ -406,7 +570,7 @@
 
         <div class="card">
           <div class="card-header">
-            <h4>Links</h4>
+            <h4 id="links">Links</h4>
           </div>
           <div id="Links" class="card-body">
           </div>

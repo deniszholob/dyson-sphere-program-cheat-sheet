@@ -19,7 +19,7 @@ function renderLinkData(data: DataLink[]): void {
     elaLink.innerHTML = elLink.text;
     const elLiLink = document.createElement("li");
     elLiLink.appendChild(elaLink);
-    elRootLinks.appendChild(elLiLink);
+    elUlLinks.appendChild(elLiLink);
   });
   elRootLinks.appendChild(elUlLinks);
 }
